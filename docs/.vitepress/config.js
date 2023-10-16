@@ -32,7 +32,28 @@ export default {
           { text: '计算机组成原理', link: '/article/计算机基础/计算机组成原理/index' },
         ],
       },
+      
       // { text: "github", link: "https://github.com/WhiteCells" },
+    ],
+  },
+  // 侧边栏
+  sidebar: {
+    "/article/": [
+      {
+        text: "算法",
+        items: [
+          { text: "1", link: "/articles/组件库环境搭建" },
+        ],
+      },
+      {
+        text: "计算机基础",
+        items: [
+          { text: '数据结构', link: '/article/计算机基础/数据结构/index' },
+          { text: '计算机网络', link: '/article/计算机基础/计算机网络/index' },
+          { text: '计算机操作系统', link: '/article/计算机基础/计算机操作系统/index' },
+          { text: '计算机组成原理', link: '/article/计算机基础/计算机组成原理/index' },
+        ],
+      },
     ],
   },
   // mathjax

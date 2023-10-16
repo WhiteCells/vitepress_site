@@ -3,7 +3,7 @@ layout: home
 home: true
 
 # 官方文档相关配置：https://vitepress.dev/reference/default-theme-home-page
-title: const_blog_
+title: const_blog
 titleTemplate: Hi，终于等到你
 editLink: true
 lastUpdated: true
