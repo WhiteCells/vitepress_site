@@ -14,7 +14,8 @@ export default {
     siteTitle: "const",
     title: 'const', // 站点标题
     // description: 'note', // 用于搜索引擎抓取摘要
-    logo: "/logo.png"    nav: [
+    logo: "/logo.png",
+    nav: [
       // { text: "", link: "/" },
       {
         text: "算法",

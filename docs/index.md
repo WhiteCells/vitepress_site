@@ -30,13 +30,13 @@ features:
   - icon: ⚡
     title: 算法学习
     details: algo learn
-    link: /articel/算法/
+    link: /article/算法/
   - icon: 🧩
     title: 计算机基础
     details: 计算机基础
-    link: /docs
+    link: /article/计算机基础/
   - icon: 📕
     title: 总结
-    details: 是个平平无奇但是又很热爱学习的斜杆青年。
-    link: /column/views/guide
+    details: 总结
+    link: /article/总结/
 ---
