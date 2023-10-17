@@ -25,6 +25,7 @@ module.exports = {
           { text: 'cmake', link: '/note/工具/cmake/index' },
           { text: 'makefile', link: '/note/工具/makefile/index' },
           { text: 'gcc', link: '/note/工具/gcc/index' },
+          { text: 'git', link: '/note/工具/git/index' },
         ],
       },
     ],
@@ -128,7 +129,26 @@ module.exports = {
           items: [
           ]
         },
-      ]
+      ],
+      '/note/工具/git/': [
+        {
+          text: 'git',
+          link: '/note/工具/git/index',
+          collapsible: true,
+          items: [
+            { text: 'git基础', link: '/note/工具/git/git' },
+          ]
+        },
+      ],
+      '/note/工具/cmake/': [
+        {
+          text: 'cmake',
+          link: '/note/工具/cmake/index',
+          collapsible: true,
+          items: [
+          ]
+        },
+      ],
     },
   },
   // mathjax
