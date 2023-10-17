@@ -1,14 +1,12 @@
 module.exports = {
   siteTitle: "const_",
-  title: "const",// 网站标题
-  description: 'XXXX', //网站描述
   base: '/',
   lang: 'zh-CH', //语言
-  repo: 'vuejs/vitepress',
-  head: [['link', { rel: 'icon', href: 'https://oss.justin3go.com/justin3goAvatar.ico', },]],// 改变title的图标
+  title: "const", // 网站标题
+  head: [['link', { rel: 'icon', href: 'https://oss.justin3go.com/justin3goAvatar.ico', },]],// 改变 title 的图标
   themeConfig: {
     // nav
-    nav: [ //   头部导航
+    nav: [ // 头部导航
       { text: '首页', link: '/index' },
       { text: '算法学习', link: '/note/算法/index' },
       {
@@ -29,10 +27,10 @@ module.exports = {
         ],
       },
     ],
-    // aside
+    // aside 目录
     outline: [1, 5],      // 识别 <h1>-<h5> 的标题
     outlineTitle: '大纲', // aside 第一行显示的文本
-    // sidebar
+    // sidebar 左侧
     sidebar: {
 
       // 计算机基础
@@ -118,6 +116,7 @@ module.exports = {
           link: '/note/工具/vim/index',
           collapsible: true,
           items: [
+            { text: 'vim', link: '/note/工具/vim/vim' },
           ]
         },
       ],
