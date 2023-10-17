@@ -3,13 +3,13 @@ layout: home
 home: true
 
 # https://vitepress.dev/reference/default-theme-home-page
-title: const_blog
+title: const_blog # 标签栏 title
 titleTemplate: Hi
 editLink: true
 lastUpdated: true
 
 hero:
-    name: const
+    name: const # 界面显示 name
     text: Stay foolish, Stay hungry.
     tagline: <small><i><u>hello world</u><i></small>
     image:
