@@ -1,4 +1,4 @@
-[167. 两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)
+### [167. 两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)
 
 给你一个下标从 **1** 开始的整数数组 `numbers` ，该数组已按 **非递减顺序排列** ，请你从数组中找出满足相加之和等于目标数 `target` 的两个数。如果设这两个数分别是 `numbers[index1]` 和 `numbers[index2]` ，则 `1 <= index1 < index2 <= numbers.length` 。
 
@@ -36,8 +36,36 @@
 
 **提示：**
 
-- `2 <= numbers.length <= 3 * 104`
-- `-1000 <= numbers[i] <= 1000`
-- `numbers` 按 **非递减顺序** 排列
-- `-1000 <= target <= 1000`
+- $2 <= numbers.length <= 3 * 10^4$
+- $-1000 <= numbers[i] <= 1000$
+- $numbers$ 按 **非递减顺序** 排列
+- $-1000 <= target <= 1000$
 - **仅存在一个有效答案**
+
+
+
+### 方法1
+
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+        int i = 0, j = numbers.size() - 1;
+        while (i < j) {
+            if (target == numbers[i] + numbers[j]) {
+                return { i + 1, j + 1 };
+            } else if (target < numbers[i] + numbers[j]) {
+                --j;
+            } else {
+                ++i;
+            }
+        }
+        return {};
+    }
+};
+```
+
+- 时间复杂度：$O(n)$
+- 空间复杂度：$O(1)$
+
