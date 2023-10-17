@@ -10,9 +10,6 @@ dependencies:
     version: registry.npmmirror.com/vitepress@1.0.0-rc.22(@algolia/client-search@4.20.0)(markdown-it-mathjax3@4.3.2)(search-insights@2.9.0)
 
 devDependencies:
-  '@yicode/yidocs-auto':
-    specifier: ^1.0.7
-    version: registry.npmmirror.com/@yicode/yidocs-auto@1.0.7
   markdown-it-mathjax3:
     specifier: ^4.3.2
     version: registry.npmmirror.com/markdown-it-mathjax3@4.3.2
@@ -749,13 +746,6 @@ packages:
       - '@vue/composition-api'
       - vue
     dev: false
-
-  registry.npmmirror.com/@yicode/yidocs-auto@1.0.7:
-    resolution: {integrity: sha512-6Pr3NXFjCot+x6OjXtA0O1W+lK0BgRKhShcU5l76kOl0oaMD6VNZ407KRJBZszDn/+IJjUvm+WsgwSh5ffsshA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@yicode/yidocs-auto/-/yidocs-auto-1.0.7.tgz}
-    name: '@yicode/yidocs-auto'
-    version: 1.0.7
-    requiresBuild: true
-    dev: true
 
   registry.npmmirror.com/algoliasearch@4.20.0:
     resolution: {integrity: sha512-y+UHEjnOItoNy0bYO+WWmLWBlPwDjKHW6mNHrPi0NkuhpQOOEbrkwQH/wgKFDLh7qlKjzoKeiRtlpewDPDG23g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/algoliasearch/-/algoliasearch-4.20.0.tgz}

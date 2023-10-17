@@ -1,8 +1,10 @@
+import mathjax3 from 'markdown-it-mathjax3';
 export default {
   base: '/', // docs
   lang: 'zh-CH',
   title: "🍙const", // 网站左上角
-  head: [['link', { rel: 'icon', href: '/logo.png', },]],// 改变 title 的图标
+  head: [['link', { rel: 'icon', href: '/logo.png', },]], // 改变 title 的图标
+  titleTemplate: false,
   themeConfig: {
     
     // 社交链接
@@ -170,7 +172,7 @@ export default {
           text: 'vim',
           link: '/note/开发工具/vim/',
           items: [
-            { text: 'vim', link: '/note/开发工具/vim/vim' },
+            { text: 'vim指令', link: '/note/开发工具/vim/vim' },
           ]
         },
       ],
@@ -187,7 +189,7 @@ export default {
           text: 'git',
           link: '/note/开发工具/git/',
           items: [
-            { text: 'git基础', link: '/note/开发工具/git/git' },
+            { text: 'git指令', link: '/note/开发工具/git/git' },
           ]
         },
       ],
@@ -261,7 +263,7 @@ export default {
   },
 }
 
-import mathjax3 from 'markdown-it-mathjax3';
+
 
 const customElements = [
   'math',
