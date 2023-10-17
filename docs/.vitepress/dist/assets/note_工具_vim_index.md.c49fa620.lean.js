@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as n}from"./chunks/framework.1169fbc9.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/工具/vim/index.md","filePath":"note/工具/vim/index.md"}'),a={name:"note/工具/vim/index.md"};function o(r,i,s,c,d,m){return t(),n("div")}const f=e(a,[["render",o]]);export{_ as __pageData,f as default};

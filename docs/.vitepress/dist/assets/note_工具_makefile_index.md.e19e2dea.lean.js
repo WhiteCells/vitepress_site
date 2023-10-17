@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.1169fbc9.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/工具/makefile/index.md","filePath":"note/工具/makefile/index.md"}'),n={name:"note/工具/makefile/index.md"};function o(r,i,s,c,d,m){return t(),a("div")}const _=e(n,[["render",o]]);export{p as __pageData,_ as default};
