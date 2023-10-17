@@ -1,3 +1,1 @@
 ### algo
-
-![](../../public/avator.png)

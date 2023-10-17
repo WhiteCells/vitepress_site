@@ -1,31 +1,34 @@
-module.exports = {
+export default {
   siteTitle: "const_",
-  base: '/',
+  base: '/', // docs
   lang: 'zh-CH', //语言
   title: "const", // 网站标题
   head: [['link', { rel: 'icon', href: 'https://oss.justin3go.com/justin3goAvatar.ico', },]],// 改变 title 的图标
   themeConfig: {
     // nav
     nav: [ // 头部导航
-      { text: '首页', link: '/index' },
-      { text: '算法学习', link: '/note/算法/index' },
+      { text: '首页', link: '/' },
+      { text: '算法基础', link: '/note/算法基础/' },
+      { text: '算法学习', link: '/note/算法/' },
       {
         text: '计算机基础', items: [
-          { text: '计算机操作系统', link: '/note/计算机基础/计算机操作系统/index' },
-          { text: '计算机组成原理', link: '/note/计算机基础/计算机组成原理/index' },
-          { text: '计算机网络', link: '/note/计算机基础/计算机网络/index' },
-          { text: '数据结构', link: '/note/计算机基础/数据结构/index' },
+          { text: '计算机操作系统', link: '/note/计算机基础/计算机操作系统/' },
+          { text: '计算机组成原理', link: '/note/计算机基础/计算机组成原理/' },
+          { text: '计算机网络', link: '/note/计算机基础/计算机网络/' },
+          { text: '数据结构', link: '/note/计算机基础/数据结构/' },
         ],
       },
       {
         text: '工具', items: [
-          { text: 'vim', link: '/note/工具/vim/index' },
-          { text: 'cmake', link: '/note/工具/cmake/index' },
-          { text: 'makefile', link: '/note/工具/makefile/index' },
-          { text: 'gcc', link: '/note/工具/gcc/index' },
-          { text: 'git', link: '/note/工具/git/index' },
+          { text: 'vim', link: '/note/工具/vim/' },
+          { text: 'cmake', link: '/note/工具/cmake/' },
+          { text: 'makefile', link: '/note/工具/makefile/' },
+          { text: 'gcc', link: '/note/工具/gcc/' },
+          { text: 'git', link: '/note/工具/git/' },
+          { text: 'docker', link: '/note/工具/docker/' },
         ],
       },
+      { text: 'MyXLog', link: 'https://030215.link' },
     ],
     // aside 目录
     outline: [1, 5],      // 识别 <h1>-<h5> 的标题
@@ -33,8 +36,27 @@ module.exports = {
     // sidebar 左侧
     sidebar: {
 
+      // 算法基础
+      "/note/算法基础/": [
+        {
+          text: '双指针',
+          items: [
+            { text: '相向双指针-两数之和II', link: '/note/算法基础/双指针/相向双指针/两数之和II' },
+            { text: '相向双指针-三数之和', link: '/note/算法基础/双指针/相向双指针/三数之和' },
+            { text: '同向双指针-滑动窗口-', link: '/note/算法基础/双指针/相向双指针/三数之和' },
+          ]
+        },
+        {
+          text: '二分查找',
+          items: [
+            { text: '二分查找-修车的最少时间', link: '/note/算法基础/二分查找/2594. 修车的最少时间' },
+
+          ]
+        }
+      ],
+
       // 计算机基础
-      '/note/计算机基础/计算机操作系统': [ // 根据不同的路径前缀显示不同的侧边栏
+      '/note/计算机基础/计算机操作系统/': [ // 根据不同的路径前缀显示不同的侧边栏
         {
           text: '计算机操作系统',
           link: '/note/计算机基础/计算机操作系统/index',
@@ -45,7 +67,7 @@ module.exports = {
           ]
         }
       ],
-      '/note/计算机基础/计算机组成原理': [ // 根据不同的路径前缀显示不同的侧边栏
+      '/note/计算机基础/计算机组成原理/': [ // 根据不同的路径前缀显示不同的侧边栏
         {
           text: '计算机组成原理',
           link: '/note/计算机基础/计算机组成原理/index',
@@ -54,19 +76,19 @@ module.exports = {
           ]
         }
       ],
-      '/note/计算机基础/计算机网络': [ // 根据不同的路径前缀显示不同的侧边栏
+      '/note/计算机基础/计算机网络/': [ // 根据不同的路径前缀显示不同的侧边栏
         {
           text: '计算机网络',
-          link: '/note/计算机基础/计算机网络/index',
+          link: '/note/计算机基础/计算机网络/',
           collapsible: true,  // 可折叠
           items: [
           ]
         }
       ],
-      '/note/计算机基础/数据结构': [ // 根据不同的路径前缀显示不同的侧边栏
+      '/note/计算机基础/数据结构/': [ // 根据不同的路径前缀显示不同的侧边栏
         {
           text: '数据结构',
-          link: '/note/计算机基础/数据结构/index',
+          link: '/note/计算机基础/数据结构/',
           collapsible: true,  // 可折叠
           items: [
           ]
@@ -77,7 +99,7 @@ module.exports = {
       '/note/算法/': [
         {
           text: '二分',
-          link: '/note/算法/二分/index',
+          link: '/note/算法/二分/',
           collapsible: true,
           items: [
             { text: '2594. 修车的最少时间', link: '/note/算法/二分/2594. 修车的最少时间' },
@@ -85,7 +107,7 @@ module.exports = {
         },
         {
           text: '前缀和',
-          link: '/note/算法/前缀和/index',
+          link: '/note/算法/前缀和/',
           collapsible: true,
           items: [
             { text: '2845. 统计趣味子数组的数目', link: '/note/算法/前缀和/2845. 统计趣味子数组的数目' },
@@ -93,7 +115,7 @@ module.exports = {
         },
         {
           text: '拓扑排序',
-          link: '/note/算法/拓扑排序/index',
+          link: '/note/算法/拓扑排序/',
           collapsible: true,
           items: [
             { text: '2594. 修车的最少时间', link: '/note/算法/二分/2594. 修车的最少时间' },
@@ -101,7 +123,7 @@ module.exports = {
         },
         {
           text: '动态规划',
-          link: '/note/算法/动态规划/index',
+          link: '/note/算法/动态规划/',
           collapsible: true,
           items: [
             { text: '状态机dp', link: '/note/算法/动态规划/状态机dp' },
@@ -113,7 +135,7 @@ module.exports = {
       '/note/工具/vim/': [
         {
           text: 'vim',
-          link: '/note/工具/vim/index',
+          link: '/note/工具/vim/',
           collapsible: true,
           items: [
             { text: 'vim', link: '/note/工具/vim/vim' },
@@ -123,7 +145,7 @@ module.exports = {
       '/note/工具/makefile/': [
         {
           text: 'makefile',
-          link: '/note/工具/makefile/index',
+          link: '/note/工具/makefile/',
           collapsible: true,
           items: [
           ]
@@ -132,7 +154,7 @@ module.exports = {
       '/note/工具/git/': [
         {
           text: 'git',
-          link: '/note/工具/git/index',
+          link: '/note/工具/git/',
           collapsible: true,
           items: [
             { text: 'git基础', link: '/note/工具/git/git' },
@@ -142,7 +164,25 @@ module.exports = {
       '/note/工具/cmake/': [
         {
           text: 'cmake',
-          link: '/note/工具/cmake/index',
+          link: '/note/工具/cmake/',
+          collapsible: true,
+          items: [
+          ]
+        },
+      ],
+      '/note/工具/gcc/': [
+        {
+          text: 'gcc',
+          link: '/note/工具/gcc/',
+          collapsible: true,
+          items: [
+          ]
+        },
+      ],
+      '/note/工具/docker/': [
+        {
+          text: 'docker',
+          link: '/note/工具/docker/',
           collapsible: true,
           items: [
           ]
@@ -150,6 +190,7 @@ module.exports = {
       ],
     },
   },
+
   // mathjax
   markdown: {
     config: (md) => {
