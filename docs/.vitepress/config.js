@@ -33,7 +33,7 @@ module.exports = {
     outlineTitle: '大纲', // aside 第一行显示的文本
     // sidebar
     sidebar: {
-      
+
       // 计算机基础
       '/note/计算机基础/计算机操作系统': [ // 根据不同的路径前缀显示不同的侧边栏
         {
