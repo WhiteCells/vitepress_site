@@ -30,11 +30,11 @@ features:
   - icon: ⚡
     title: 算法学习
     details: algo learn
-    link: /article/算法/
+    link: /note/算法/
   - icon: 🧩
     title: 计算机基础
     details: 计算机基础
-    link: /article/计算机基础/
+    link: /note/计算机基础/
   - icon: 📕
     title: 总结
     details: 总结

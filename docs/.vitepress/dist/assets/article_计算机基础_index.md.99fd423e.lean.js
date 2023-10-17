@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.1169fbc9.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"article/计算机基础/index.md","filePath":"article/计算机基础/index.md"}'),r={name:"article/计算机基础/index.md"};function n(c,i,o,s,d,p){return t(),a("div")}const m=e(r,[["render",n]]);export{l as __pageData,m as default};
