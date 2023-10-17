@@ -4,7 +4,7 @@ export default {
   title: "🍙const", // 网站左上角
   head: [['link', { rel: 'icon', href: '/logo.png', },]],// 改变 title 的图标
   themeConfig: {
-
+    
     // 社交链接
     socialLinks: [
       { icon: 'github', link: 'https://github.com/WhiteCells' },
@@ -27,7 +27,7 @@ export default {
       },
       {
         text: '算法学习',
-        link: '/note/算法/',
+        link: '/note/算法/'
       },
       {
         text: '计算机基础',
@@ -202,7 +202,7 @@ export default {
       '/note/开发工具/gcc/': [
         {
           text: 'gcc',
-          link: '/note/开发工具/gcc/gcc',
+          link: '/note/开发工具/gcc/',
           items: [
             { text: 'gcc指令', link: '/note/开发工具/gcc/gcc' },
           ]
