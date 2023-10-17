@@ -52,8 +52,6 @@
 
 $dfs(i-1,·)$ 表示到第 $i$ 天开始的最大利润
 
-![](assets/image-20231005092706242.png)
-
 $dfs(i,0)=max(dfs(i-1,0),dfs(i-1,1)+prices[i])$
 
 $dfs(i,1)=max(dfs(i-1,1),dfs(i-1,0)-prices[i])$

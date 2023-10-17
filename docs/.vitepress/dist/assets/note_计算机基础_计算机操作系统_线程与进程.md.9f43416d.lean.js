@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.1169fbc9.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/计算机基础/计算机操作系统/线程与进程.md","filePath":"note/计算机基础/计算机操作系统/线程与进程.md"}'),o={name:"note/计算机基础/计算机操作系统/线程与进程.md"};function n(r,s,_,c,p,d){return t(),a("div")}const f=e(o,[["render",n]]);export{m as __pageData,f as default};
