@@ -4,4 +4,4 @@ layout: page
 <br/>
 <br/>
 <br/>
-<center>施工中...</center>
+<center><b>施 工 中 ......</b></center>

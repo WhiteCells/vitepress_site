@@ -1,7 +1,7 @@
 export default {
   base: '/', // docs
   lang: 'zh-CH',
-  title: "const", // 网站左上角
+  title: "🍙const", // 网站左上角
   head: [['link', { rel: 'icon', href: '/logo.png', },]],// 改变 title 的图标
   themeConfig: {
 
@@ -17,11 +17,21 @@ export default {
 
     // nav
     nav: [ // 头部导航
-      { text: '首页', link: '/' },
-      { text: '算法基础', link: '/note/算法基础/' },
-      { text: '算法学习', link: '/note/算法/' },
       {
-        text: '计算机基础', items: [
+        text: '首页',
+        link: '/',
+      },
+      {
+        text: '算法基础',
+        link: '/note/算法基础/',
+      },
+      {
+        text: '算法学习',
+        link: '/note/算法/',
+      },
+      {
+        text: '计算机基础',
+        items: [
           { text: '计算机操作系统', link: '/note/计算机基础/计算机操作系统/' },
           { text: '计算机组成原理', link: '/note/计算机基础/计算机组成原理/' },
           { text: '计算机网络', link: '/note/计算机基础/计算机网络/' },
@@ -29,7 +39,8 @@ export default {
         ],
       },
       {
-        text: '开发工具', items: [
+        text: '开发工具',
+        items: [
           { text: 'vim', link: '/note/开发工具/vim/' },
           { text: 'cmake', link: '/note/开发工具/cmake/' },
           { text: 'makefile', link: '/note/开发工具/makefile/' },
@@ -38,8 +49,28 @@ export default {
           { text: 'docker', link: '/note/开发工具/docker/' },
         ],
       },
-      { text: '关于', link: '/note/关于/' },
-      { text: 'MyXLog', link: 'https://030215.link' },
+      {
+        text: '数据库',
+        items: [
+          { text: 'MySQL', link: '/note/数据库/MySQL/' },
+        ]
+      },
+      {
+        text: '书籍',
+        items: [
+          { text: 'Effective C++', link: '/note/书籍/Effective C++/' },
+          { text: 'More Effective C++', link: '/note/书籍/More Effective C++/' },
+          { text: 'Effective Modern C++', link: '/note/书籍/Effective Modern C++/' },
+        ]
+      },
+      {
+        text: '关于',
+        link: '/note/关于/'
+      },
+      {
+        text: 'MyXLog',
+        link: 'https://030215.link'
+      },
     ],
     // aside 目录
     outline: [1, 5],      // 识别 <h1>-<h5> 的标题
@@ -52,6 +83,7 @@ export default {
       "/note/算法基础/": [
         {
           text: '双指针',
+          // collapsed:true,
           items: [
             { text: '相向双指针-两数之和II', link: '/note/算法基础/双指针/相向双指针/两数之和II' },
             { text: '相向双指针-三数之和', link: '/note/算法基础/双指针/相向双指针/三数之和' },
@@ -61,8 +93,7 @@ export default {
         {
           text: '二分查找',
           items: [
-            { text: '二分查找-修车的最少时间', link: '/note/算法基础/二分查找/2594. 修车的最少时间' },
-
+            { text: '修车的最少时间', link: '/note/算法基础/二分查找/2594. 修车的最少时间' },
           ]
         }
       ],
@@ -72,7 +103,6 @@ export default {
         {
           text: '计算机组成原理',
           link: '/note/计算机基础/计算机组成原理/',
-          collapsible: true,  // 可折叠
           items: [
           ]
         }
@@ -81,7 +111,6 @@ export default {
         {
           text: '计算机操作系统',
           link: '/note/计算机基础/计算机操作系统/',
-          collapsible: true,  // 可折叠
           items: [
           ]
         }
@@ -90,7 +119,6 @@ export default {
         {
           text: '计算机网络',
           link: '/note/计算机基础/计算机网络/',
-          collapsible: true,  // 可折叠
           items: [
           ]
         }
@@ -99,7 +127,6 @@ export default {
         {
           text: '数据结构',
           link: '/note/计算机基础/数据结构/',
-          collapsible: true,  // 可折叠
           items: [
           ]
         }
@@ -110,7 +137,6 @@ export default {
         {
           text: '二分',
           link: '/note/算法/二分/',
-          collapsible: true,
           items: [
             { text: '2594. 修车的最少时间', link: '/note/算法/二分/2594. 修车的最少时间' },
           ]
@@ -118,7 +144,6 @@ export default {
         {
           text: '前缀和',
           link: '/note/算法/前缀和/',
-          collapsible: true,
           items: [
             { text: '2845. 统计趣味子数组的数目', link: '/note/算法/前缀和/2845. 统计趣味子数组的数目' },
           ]
@@ -126,7 +151,6 @@ export default {
         {
           text: '拓扑排序',
           link: '/note/算法/拓扑排序/',
-          collapsible: true,
           items: [
             { text: '2594. 修车的最少时间', link: '/note/算法/二分/2594. 修车的最少时间' },
           ]
@@ -134,7 +158,6 @@ export default {
         {
           text: '动态规划',
           link: '/note/算法/动态规划/',
-          collapsible: true,
           items: [
             { text: '状态机dp', link: '/note/算法/动态规划/状态机dp' },
           ]
@@ -146,7 +169,6 @@ export default {
         {
           text: 'vim',
           link: '/note/开发工具/vim/',
-          collapsible: true,
           items: [
             { text: 'vim', link: '/note/开发工具/vim/vim' },
           ]
@@ -155,8 +177,7 @@ export default {
       '/note/开发工具/makefile/': [
         {
           text: 'makefile',
-          link: '/note/开发工具/makefile/',
-          collapsible: true,
+          link: '/note/开发工具/makefile/makefile',
           items: [
           ]
         },
@@ -165,7 +186,6 @@ export default {
         {
           text: 'git',
           link: '/note/开发工具/git/',
-          collapsible: true,
           items: [
             { text: 'git基础', link: '/note/开发工具/git/git' },
           ]
@@ -175,7 +195,6 @@ export default {
         {
           text: 'cmake',
           link: '/note/开发工具/cmake/',
-          collapsible: true,
           items: [
           ]
         },
@@ -183,9 +202,9 @@ export default {
       '/note/开发工具/gcc/': [
         {
           text: 'gcc',
-          link: '/note/开发工具/gcc/',
-          collapsible: true,
+          link: '/note/开发工具/gcc/gcc',
           items: [
+            { text: 'gcc指令', link: '/note/开发工具/gcc/gcc' },
           ]
         },
       ],
@@ -193,14 +212,39 @@ export default {
         {
           text: 'docker',
           link: '/note/工具/docker/',
-          collapsible: true,
           items: [
+          ]
+        },
+      ],
+
+
+      // 数据库
+      '/note/数据库/MySQL/': [
+        {
+          text: 'MySQL',
+          link: '/note/数据库/MySQL/',
+          items: [
+            { text: 'MySQL', link: '/note/数据库/MySQL/MySQL' },
+          ]
+        },
+      ],
+
+
+      // 书籍
+      // Effective Modern C++
+      '/note/书籍/Effective Modern C++/': [
+        {
+          text: 'Effective Modern C++',
+          link: '/note/书籍/Effective Modern C++/',
+          items: [
+            { text: 'Item1: Understand template type deduction ', link: '/note/书籍/Effective Modern C++/Item1' },
+            { text: 'Item2: Understand auto type deduction', link: '/note/书籍/Effective Modern C++/Item2' },
+            { text: 'Item3: Understand decltype', link: '/note/书籍/Effective Modern C++/Item3' },
           ]
         },
       ],
     },
   },
-
 
   // mathjax
   markdown: {

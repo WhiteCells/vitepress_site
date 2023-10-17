@@ -21,8 +21,8 @@ hero:
     #   text: 进入主页
     #   link:
     - theme: alt
-      text: 个人成长
-      link:
+      text: Experience++
+      link: '/'
 
 features: # 按钮下方的描述
   - icon: ⚡
