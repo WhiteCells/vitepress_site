@@ -17,9 +17,9 @@ hero:
         alt: avatar # 图片的描述
     
     actions: # 按钮相关
-    - theme: brand
-      text: 进入主页
-      link:
+    # - theme: brand
+    #   text: 进入主页
+    #   link:
     - theme: alt
       text: 个人成长
       link:
@@ -32,9 +32,9 @@ features: # 按钮下方的描述
   - icon: 🧩
     title: 计算机基础
     details: 计算机基础
-    link: 
+    link:
   - icon: 🔧
     title: 开发工具
     details: 总结
-    link: /note/工具/
+    link:
 ---

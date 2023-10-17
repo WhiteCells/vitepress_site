@@ -3,7 +3,7 @@ export default {
   base: '/', // docs
   lang: 'zh-CH', //语言
   title: "const", // 网站标题
-  head: [['link', { rel: 'icon', href: 'https://oss.justin3go.com/justin3goAvatar.ico', },]],// 改变 title 的图标
+  head: [['link', { rel: 'icon', href: '/logo.png', },]],// 改变 title 的图标
   themeConfig: {
     // nav
     nav: [ // 头部导航
@@ -19,13 +19,13 @@ export default {
         ],
       },
       {
-        text: '工具', items: [
-          { text: 'vim', link: '/note/工具/vim/' },
-          { text: 'cmake', link: '/note/工具/cmake/' },
-          { text: 'makefile', link: '/note/工具/makefile/' },
-          { text: 'gcc', link: '/note/工具/gcc/' },
-          { text: 'git', link: '/note/工具/git/' },
-          { text: 'docker', link: '/note/工具/docker/' },
+        text: '开发工具', items: [
+          { text: 'vim', link: '/note/开发工具/vim/' },
+          { text: 'cmake', link: '/note/开发工具/cmake/' },
+          { text: 'makefile', link: '/note/开发工具/makefile/' },
+          { text: 'gcc', link: '/note/开发工具/gcc/' },
+          { text: 'git', link: '/note/开发工具/git/' },
+          { text: 'docker', link: '/note/开发工具/docker/' },
         ],
       },
       { text: 'MyXLog', link: 'https://030215.link' },
@@ -55,22 +55,19 @@ export default {
         }
       ],
 
-      // 计算机基础
-      '/note/计算机基础/计算机操作系统/': [ // 根据不同的路径前缀显示不同的侧边栏
-        {
-          text: '计算机操作系统',
-          link: '/note/计算机基础/计算机操作系统/index',
-          collapsible: true,  // 可折叠
-          items: [
-            { text: '线程与进程', link: '/note/计算机基础/计算机操作系统/线程与进程' },
-            { text: '锁机制', link: '/note/计算机基础/计算机操作系统/锁机制' },
-          ]
-        }
-      ],
       '/note/计算机基础/计算机组成原理/': [ // 根据不同的路径前缀显示不同的侧边栏
         {
           text: '计算机组成原理',
-          link: '/note/计算机基础/计算机组成原理/index',
+          link: '/note/计算机基础/计算机组成原理/',
+          collapsible: true,  // 可折叠
+          items: [
+          ]
+        }
+      ],
+      '/note/计算机基础/计算机操作系统/': [ // 根据不同的路径前缀显示不同的侧边栏
+        {
+          text: '计算机操作系统',
+          link: '/note/计算机基础/计算机操作系统/',
           collapsible: true,  // 可折叠
           items: [
           ]
@@ -131,55 +128,55 @@ export default {
         },
       ],
 
-      // 工具
-      '/note/工具/vim/': [
+      // 开发工具
+      '/note/开发工具/vim/': [
         {
           text: 'vim',
-          link: '/note/工具/vim/',
+          link: '/note/开发工具/vim/',
           collapsible: true,
           items: [
-            { text: 'vim', link: '/note/工具/vim/vim' },
+            { text: 'vim', link: '/note/开发工具/vim/vim' },
           ]
         },
       ],
-      '/note/工具/makefile/': [
+      '/note/开发工具/makefile/': [
         {
           text: 'makefile',
-          link: '/note/工具/makefile/',
+          link: '/note/开发工具/makefile/',
           collapsible: true,
           items: [
           ]
         },
       ],
-      '/note/工具/git/': [
+      '/note/开发工具/git/': [
         {
           text: 'git',
-          link: '/note/工具/git/',
+          link: '/note/开发工具/git/',
           collapsible: true,
           items: [
-            { text: 'git基础', link: '/note/工具/git/git' },
+            { text: 'git基础', link: '/note/开发工具/git/git' },
           ]
         },
       ],
-      '/note/工具/cmake/': [
+      '/note/开发工具/cmake/': [
         {
           text: 'cmake',
-          link: '/note/工具/cmake/',
+          link: '/note/开发工具/cmake/',
           collapsible: true,
           items: [
           ]
         },
       ],
-      '/note/工具/gcc/': [
+      '/note/开发工具/gcc/': [
         {
           text: 'gcc',
-          link: '/note/工具/gcc/',
+          link: '/note/开发工具/gcc/',
           collapsible: true,
           items: [
           ]
         },
       ],
-      '/note/工具/docker/': [
+      '/note/开发工具/docker/': [
         {
           text: 'docker',
           link: '/note/工具/docker/',
