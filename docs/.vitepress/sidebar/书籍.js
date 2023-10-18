@@ -1,4 +1,4 @@
-export const 书籍 = [
+export const Effective_Modern_CPP = [
   {
     text: 'Effective Modern C++',
     link: '/note/书籍/Effective Modern C++/',

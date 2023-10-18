@@ -10,7 +10,7 @@ lastUpdated: true
 
 hero:
     name: const # 界面显示 name
-    text: Stay foolish, Stay hungry.
+    text: Move fast and break things.
     tagline: <small><i><u>hello world</u><i></small>
     image:
         src: /avator.png # 首页右边的图片

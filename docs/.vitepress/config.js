@@ -1,11 +1,10 @@
 import mathjax3 from 'markdown-it-mathjax3';
 import nav from "./nav/";
-import { 算法基础 } from "./sidebar/算法基础";
-import { 算法 } from "./sidebar/算法";
-import { 数据库 } from "./sidebar/数据库";
-import { 书籍 } from "./sidebar/书籍";
+import { MySQL } from "./sidebar/数据库";
+import { Effective_Modern_CPP } from "./sidebar/书籍";
 import { 数据结构, 计算机组成原理, 计算机网络, 计算机操作系统 } from "./sidebar/计算机基础";
 import { vim, makefile, gcc, git, cmake, docker } from "./sidebar/开发工具";
+import { 算法, 算法基础, LeetCode周赛 } from "./sidebar/算法学习";
 
 export default {
   lang: 'zh-CH',
@@ -22,21 +21,24 @@ export default {
       },
     ],
 
-    nav: nav, // nav
+    nav: nav,
 
     outline: [1, 5],      // aside 目录识别 <h1>-<h5> 的标题
     outlineTitle: '大纲', // aside 第一行显示的文本
 
-    sidebar: { // sidebar 左侧
-      "/note/算法基础/": 算法基础,
+    sidebar: {
+      // 算法
+      "/note/算法学习/算法/": 算法,
+      "/note/算法学习/算法基础/": 算法基础,
+      "/note/算法学习/LeetCode周赛/": LeetCode周赛,
 
-      "/note/算法/": 算法,
-
+      // 计算机基础
       "/note/计算机基础/数据结构": 数据结构,
       "/note/计算机基础/计算机网络": 计算机网络,
       "/note/计算机基础/计算机操作系统": 计算机操作系统,
       "/note/计算机基础/计算机组成原理": 计算机组成原理,
-      
+
+      // 开发工具
       "/note/开发工具/git": git,
       "/note/开发工具/gcc": gcc,
       "/note/开发工具/cmake": cmake,
@@ -44,9 +46,11 @@ export default {
       "/note/开发工具/docker": docker,
       "/note/开发工具/vim": vim,
 
-      "/note/书籍/": 书籍,
+      // 书籍
+      "/note/书籍/": Effective_Modern_CPP,
 
-      "/note/数据库/": 数据库,
+      // 数据库
+      "/note/数据库/": MySQL,
     },
   },
 

@@ -1,4 +1,4 @@
-export const 数据库 = [
+export const MySQL = [
   {
     text: 'MySQL',
     link: '/note/数据库/MySQL/',

@@ -4,12 +4,12 @@ export default [
         link: '/',
     },
     {
-        text: '算法基础',
-        link: '/note/算法基础/',
-    },
-    {
         text: '算法学习',
-        link: '/note/算法/'
+        items: [
+            { text: '算法', link: '/note/算法学习/算法/' },
+            { text: '算法基础', link: '/note/算法学习/算法基础/' },
+            { text: 'LeetCode周赛', link: '/note/算法学习/LeetCode周赛/' },
+        ],
     },
     {
         text: '计算机基础',
