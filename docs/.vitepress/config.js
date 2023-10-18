@@ -1,14 +1,19 @@
 import mathjax3 from 'markdown-it-mathjax3';
+import nav from "./nav/";
+import { 算法基础 } from "./sidebar/算法基础";
+import { 算法 } from "./sidebar/算法";
+import { 数据库 } from "./sidebar/数据库";
+import { 书籍 } from "./sidebar/书籍";
+import { 数据结构, 计算机组成原理, 计算机网络, 计算机操作系统 } from "./sidebar/计算机基础";
+import { vim, makefile, gcc, git, cmake, docker } from "./sidebar/开发工具";
+
 export default {
-  base: '/', // docs
   lang: 'zh-CH',
   title: "🍙const", // 网站左上角
   head: [['link', { rel: 'icon', href: '/logo.png', },]], // 改变 title 的图标
   titleTemplate: false,
   themeConfig: {
-    
-    // 社交链接
-    socialLinks: [
+    socialLinks: [ // 社交链接
       { icon: 'github', link: 'https://github.com/WhiteCells' },
       {
         icon: {
@@ -17,234 +22,31 @@ export default {
       },
     ],
 
-    // nav
-    nav: [ // 头部导航
-      {
-        text: '首页',
-        link: '/',
-      },
-      {
-        text: '算法基础',
-        link: '/note/算法基础/',
-      },
-      {
-        text: '算法学习',
-        link: '/note/算法/'
-      },
-      {
-        text: '计算机基础',
-        items: [
-          { text: '计算机操作系统', link: '/note/计算机基础/计算机操作系统/' },
-          { text: '计算机组成原理', link: '/note/计算机基础/计算机组成原理/' },
-          { text: '计算机网络', link: '/note/计算机基础/计算机网络/' },
-          { text: '数据结构', link: '/note/计算机基础/数据结构/' },
-        ],
-      },
-      {
-        text: '开发工具',
-        items: [
-          { text: 'vim', link: '/note/开发工具/vim/' },
-          { text: 'cmake', link: '/note/开发工具/cmake/' },
-          { text: 'makefile', link: '/note/开发工具/makefile/' },
-          { text: 'gcc', link: '/note/开发工具/gcc/' },
-          { text: 'git', link: '/note/开发工具/git/' },
-          { text: 'docker', link: '/note/开发工具/docker/' },
-        ],
-      },
-      {
-        text: '数据库',
-        items: [
-          { text: 'MySQL', link: '/note/数据库/MySQL/' },
-        ]
-      },
-      {
-        text: '书籍',
-        items: [
-          { text: 'Effective C++', link: '/note/书籍/Effective C++/' },
-          { text: 'More Effective C++', link: '/note/书籍/More Effective C++/' },
-          { text: 'Effective Modern C++', link: '/note/书籍/Effective Modern C++/' },
-        ]
-      },
-      {
-        text: '关于',
-        link: '/note/关于/'
-      },
-      {
-        text: 'MyXLog',
-        link: 'https://030215.link'
-      },
-    ],
-    // aside 目录
-    outline: [1, 5],      // 识别 <h1>-<h5> 的标题
+    nav: nav, // nav
+
+    outline: [1, 5],      // aside 目录识别 <h1>-<h5> 的标题
     outlineTitle: '大纲', // aside 第一行显示的文本
 
-    // sidebar 左侧
-    sidebar: {
+    sidebar: { // sidebar 左侧
+      "/note/计算机基础/数据结构": 数据结构,
+      "/note/计算机基础/计算机网络": 计算机网络,
+      "/note/计算机基础/计算机操作系统": 计算机操作系统,
+      "/note/计算机基础/计算机组成原理": 计算机组成原理,
+      
+      "/note/开发工具/git": git,
+      "/note/开发工具/gcc": gcc,
+      "/note/开发工具/cmake": cmake,
+      "/note/开发工具/makefile": makefile,
+      "/note/开发工具/docker": docker,
+      "/note/开发工具/vim": vim,
 
-      // 算法基础
-      "/note/算法基础/": [
-        {
-          text: '双指针',
-          // collapsed:true,
-          items: [
-            { text: '相向双指针-两数之和II', link: '/note/算法基础/双指针/相向双指针/两数之和II' },
-            { text: '相向双指针-三数之和', link: '/note/算法基础/双指针/相向双指针/三数之和' },
-            { text: '同向双指针-滑动窗口-', link: '/note/算法基础/双指针/相向双指针/三数之和' },
-          ]
-        },
-        {
-          text: '二分查找',
-          items: [
-            { text: '修车的最少时间', link: '/note/算法基础/二分查找/2594. 修车的最少时间' },
-          ]
-        }
-      ],
+      "/note/书籍/": 书籍,
 
-      // 计算机基础
-      '/note/计算机基础/计算机组成原理/': [ // 根据不同的路径前缀显示不同的侧边栏
-        {
-          text: '计算机组成原理',
-          link: '/note/计算机基础/计算机组成原理/',
-          items: [
-          ]
-        }
-      ],
-      '/note/计算机基础/计算机操作系统/': [ // 根据不同的路径前缀显示不同的侧边栏
-        {
-          text: '计算机操作系统',
-          link: '/note/计算机基础/计算机操作系统/',
-          items: [
-          ]
-        }
-      ],
-      '/note/计算机基础/计算机网络/': [ // 根据不同的路径前缀显示不同的侧边栏
-        {
-          text: '计算机网络',
-          link: '/note/计算机基础/计算机网络/',
-          items: [
-          ]
-        }
-      ],
-      '/note/计算机基础/数据结构/': [ // 根据不同的路径前缀显示不同的侧边栏
-        {
-          text: '数据结构',
-          link: '/note/计算机基础/数据结构/',
-          items: [
-          ]
-        }
-      ],
+      "/note/数据库/": 数据库,
 
-      // 算法学习
-      '/note/算法/': [
-        {
-          text: '二分',
-          link: '/note/算法/二分/',
-          items: [
-            { text: '2594. 修车的最少时间', link: '/note/算法/二分/2594. 修车的最少时间' },
-          ]
-        },
-        {
-          text: '前缀和',
-          link: '/note/算法/前缀和/',
-          items: [
-            { text: '2845. 统计趣味子数组的数目', link: '/note/算法/前缀和/2845. 统计趣味子数组的数目' },
-          ]
-        },
-        {
-          text: '拓扑排序',
-          link: '/note/算法/拓扑排序/',
-          items: [
-            { text: '2594. 修车的最少时间', link: '/note/算法/二分/2594. 修车的最少时间' },
-          ]
-        },
-        {
-          text: '动态规划',
-          link: '/note/算法/动态规划/',
-          items: [
-            { text: '状态机dp', link: '/note/算法/动态规划/状态机dp' },
-          ]
-        },
-      ],
+      "/note/算法/": 算法,
 
-      // 开发工具
-      '/note/开发工具/vim/': [
-        {
-          text: 'vim',
-          link: '/note/开发工具/vim/',
-          items: [
-            { text: 'vim指令', link: '/note/开发工具/vim/vim' },
-          ]
-        },
-      ],
-      '/note/开发工具/makefile/': [
-        {
-          text: 'makefile',
-          link: '/note/开发工具/makefile/makefile',
-          items: [
-          ]
-        },
-      ],
-      '/note/开发工具/git/': [
-        {
-          text: 'git',
-          link: '/note/开发工具/git/',
-          items: [
-            { text: 'git指令', link: '/note/开发工具/git/git' },
-          ]
-        },
-      ],
-      '/note/开发工具/cmake/': [
-        {
-          text: 'cmake',
-          link: '/note/开发工具/cmake/',
-          items: [
-          ]
-        },
-      ],
-      '/note/开发工具/gcc/': [
-        {
-          text: 'gcc',
-          link: '/note/开发工具/gcc/',
-          items: [
-            { text: 'gcc指令', link: '/note/开发工具/gcc/gcc' },
-          ]
-        },
-      ],
-      '/note/开发工具/docker/': [
-        {
-          text: 'docker',
-          link: '/note/工具/docker/',
-          items: [
-          ]
-        },
-      ],
-
-
-      // 数据库
-      '/note/数据库/MySQL/': [
-        {
-          text: 'MySQL',
-          link: '/note/数据库/MySQL/',
-          items: [
-            { text: 'MySQL', link: '/note/数据库/MySQL/MySQL' },
-          ]
-        },
-      ],
-
-
-      // 书籍
-      // Effective Modern C++
-      '/note/书籍/Effective Modern C++/': [
-        {
-          text: 'Effective Modern C++',
-          link: '/note/书籍/Effective Modern C++/',
-          items: [
-            { text: 'Item1: Understand template type deduction ', link: '/note/书籍/Effective Modern C++/Item1' },
-            { text: 'Item2: Understand auto type deduction', link: '/note/书籍/Effective Modern C++/Item2' },
-            { text: 'Item3: Understand decltype', link: '/note/书籍/Effective Modern C++/Item3' },
-          ]
-        },
-      ],
+      "/note/算法基础/": 算法基础,
     },
   },
 
@@ -262,8 +64,6 @@ export default {
     },
   },
 }
-
-
 
 const customElements = [
   'math',
