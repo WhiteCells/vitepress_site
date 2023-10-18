@@ -28,6 +28,10 @@ export default {
     outlineTitle: '大纲', // aside 第一行显示的文本
 
     sidebar: { // sidebar 左侧
+      "/note/算法基础/": 算法基础,
+
+      "/note/算法/": 算法,
+
       "/note/计算机基础/数据结构": 数据结构,
       "/note/计算机基础/计算机网络": 计算机网络,
       "/note/计算机基础/计算机操作系统": 计算机操作系统,
@@ -43,10 +47,6 @@ export default {
       "/note/书籍/": 书籍,
 
       "/note/数据库/": 数据库,
-
-      "/note/算法/": 算法,
-
-      "/note/算法基础/": 算法基础,
     },
   },
 
